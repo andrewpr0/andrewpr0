@@ -1,0 +1,269 @@
+html {
+  font-family: 'Bebas Neue', sans-serif;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  background-color: #111111;
+}
+
+/* General */
+header {
+  background-color: #111111; /* Color de fondo del header */
+  padding: 10px 0;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+}
+
+/* Contenedor del nav */
+.nav-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Menú de navegación a la izquierda, en línea (horizontal) */
+.nav-menu.left {
+  list-style: none;
+  display: flex; /* Alinear en horizontal */
+  margin: 0;
+  padding: 0;
+}
+
+.nav-menu.left li {
+  margin-right: 20px; /* Espaciado entre los ítems */
+}
+
+.nav-menu a {
+  text-decoration: none;
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 20px;
+  color: #ffffff;
+  transition: color 0.3s;
+}
+
+.nav-menu a:hover {
+  color: #f04; /* Color al pasar el cursor */
+}
+
+/* Logo centrado correctamente */
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+}
+
+.logo img {
+  max-height: 44px; /* Ajustar el tamaño del logo */
+  width: auto;
+}
+
+/* Espacio vacío a la derecha para mantener el diseño */
+.empty-space {
+  flex-grow: 1;
+}
+
+/* Para dispositivos móviles (menú vertical) */
+
+/* Grid de proyectos */
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2px; /* Espacio entre los proyectos */
+  padding: 2px; /* Espacio alrededor de la cuadrícula para mantener el margen */
+  box-sizing: border-box; /* Incluye padding y border en el ancho total */
+}
+
+.project-item {
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  max-width: 100%; /* Ajusta el ancho máximo teniendo en cuenta el gap */
+  box-sizing: border-box; /* Incluye padding y border en el ancho total */
+}
+
+.project-item img {
+  width: 100%;  /* La imagen ocupará todo el ancho del contenedor */
+  height: auto; /* Aseguramos que la imagen llene completamente el contenedor */
+  object-fit: cover; /* La imagen se recorta para llenar el espacio, manteniendo la proporción */
+  transition: filter 0.3s ease; /* Transición para desenfoque */
+}
+
+.project-info {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center; /* Centrar horizontalmente */
+  align-items: center; /* Centrar verticalmente */
+  background-color: rgba(0, 0, 0, 0.6); /* Fondo oscuro semitransparente */
+  color: white;
+  font-size: 24px;
+  opacity: 0;
+  transition: opacity 0.3s, transform 0.3s;
+  transform: scale(1.1); /* Leve ampliación inicial */
+}
+
+.project-item:hover img {
+  filter: blur(5px); /* Efecto de desenfoque */
+}
+
+.project-item:hover .project-info {
+  opacity: 1; /* Mostrar información del proyecto */
+}
+
+
+
+body {
+  margin: 0px;
+}
+
+.project-gallery {
+  text-align: center;
+}
+
+.project-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.project-item {
+  width: 100%;
+  text-align: left;
+}
+
+.project-item img {
+  max-width: 100%;
+  border-radius: 5px;
+}
+
+.project-details {
+  padding: 10px 0;
+}
+
+/* css de cada pagina del proyecto */
+
+.project-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.project-title {
+  font-size: 3rem;
+  text-align: center;
+  margin-bottom: 2rem;
+  color: #333;
+}
+
+.project-content {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+}
+
+.project-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+
+.image-container {
+  width: 100%;
+  max-width: 1000px;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.section-description {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #444;
+  max-width: 800px;
+  text-align: center;
+}
+
+.back-link {
+  display: inline-block;
+  margin-top: 2rem;
+  padding: 0.5rem 1rem;
+  background-color: #0070f3;
+  color: white;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.back-link:hover {
+  background-color: #0051a2;
+}
+
+.project-not-found {
+  text-align: center;
+  font-size: 1.5rem;
+  color: #666;
+  margin-top: 4rem;
+}
+
+/* Responsive adjustments */
+@media (min-width: 768px) {
+  
+}
+
+/* Responsivo - móviles (1 columna) */
+@media (max-width: 768px) {
+  .projects-grid {
+      grid-template-columns: 1fr; /* 1 columna en pantallas pequeñas */
+  }
+  .nav-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .nav-menu.left {
+    flex-direction: column; /* Cambiar a vertical en móviles */
+    text-align: center;
+  }
+
+  .nav-menu.left li {
+    margin-bottom: 10px;
+    margin-right: 0; /* Eliminar margen derecho */
+  }
+    /* responsive proyecto*/
+  .empty-space {
+    display: none;
+  }
+  .project-section {
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+  }
+
+  .project-section.odd {
+    flex-direction: row-reverse;
+  }
+
+  .image-container {
+    width: 60%;
+  }
+
+  .section-description {
+    width: 40%;
+    text-align: left;
+    padding: 0 2rem;
+  }
+
+  .project-section.odd .section-description {
+    text-align: right;
+  }
+}
+
+
+
