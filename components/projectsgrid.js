@@ -9,7 +9,7 @@ export default function Projectgrid() {
         <div className="projects-grid">
             {projects.map((project) => (
                 <Link href={`/projects/${project.id}`} key={project.id} className="project-item">
-                    <Image src={project.bannerImage} alt={project.title} width={500} height={300} />
+                    <Image src={project.bannerImage} alt={project.title} width={1920} height={1080} />
                     <div className="project-info">
                         <h3>{project.title}</h3>
                     </div>

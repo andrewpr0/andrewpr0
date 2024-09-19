@@ -3,12 +3,10 @@ import Link from 'next/link';
 export default function Header() {
   return (
     <nav className="nav-container">
-        {/* Menú a la izquierda en horizontal */}
       
       <ul className="nav-menu left">
           <li><a href="#concept-art">Concept Art</a></li>
-          <li><a href="#illustration">Art and Illustration</a></li>
-          <li><a href="#3d-art">3D Art</a></li>
+           
       </ul>
 
       {/* Logo centrado */}

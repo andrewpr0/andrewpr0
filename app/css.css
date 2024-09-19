@@ -17,7 +17,7 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  max-width: 1200px;
+  max-width: 1920px;
   margin: 0 auto;
   padding: 0 20px;
 }
@@ -35,6 +35,7 @@ header {
 }
 
 .nav-menu a {
+  display: block;
   text-decoration: none;
   font-family: 'Bebas Neue', sans-serif;
   font-size: 20px;
@@ -51,7 +52,7 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-grow: 1;
+  flex-grow: 10;
 }
 
 .logo img {
@@ -102,7 +103,7 @@ header {
   align-items: center; /* Centrar verticalmente */
   background-color: rgba(0, 0, 0, 0.6); /* Fondo oscuro semitransparente */
   color: white;
-  font-size: 24px;
+  font-size: 48px;
   opacity: 0;
   transition: opacity 0.3s, transform 0.3s;
   transform: scale(1.1); /* Leve ampliación inicial */
