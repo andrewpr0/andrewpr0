@@ -242,27 +242,27 @@ body {
     display: none;
   }
   .project-section {
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
     align-items: flex-start;
   }
 
   .project-section.odd {
-    flex-direction: row-reverse;
+    flex-direction: column;
   }
 
   .image-container {
-    width: 60%;
+    width: 100%;
   }
 
   .section-description {
-    width: 40%;
-    text-align: left;
+    width: 100%;
+    text-align: center;
     padding: 0 2rem;
   }
 
   .project-section.odd .section-description {
-    text-align: right;
+    text-align: center;
   }
 }
 
