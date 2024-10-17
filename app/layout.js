@@ -8,7 +8,7 @@ export const metadata = {
   description: "A showcase of your projects and skills",
 };
 
-export default function RootLayout({ children }) {
+export default function Layout({ children, onCategoryChange }) {
   return (
     <html lang="en">
       <head>
@@ -18,7 +18,7 @@ export default function RootLayout({ children }) {
       </head>
       <body>
         <div className="site-content">
-          <Header />
+        <Header onCategoryChange={onCategoryChange} />
           <main>
             {children}
           </main>
