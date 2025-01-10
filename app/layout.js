@@ -14,48 +14,29 @@ export default function Layout({ children, onCategoryChange }) {
       <head>
         <meta charSet="UTF-8" />
         <title>Andrew Portfolio - Concept Art | Concept Art Colombia</title>
-        <meta name="description" content="Explora increíbles proyectos de concept art. Andrew Sánchez, artista profesional, colombia ofrece diseños únicos de concept art y más."></meta>
+        <meta name="description" content="Explore the portfolio of Andrew Pro, a Colombian illustrator and concept artist specializing in Concept Art and 3D Work." />
+        <meta name="keywords" content="Concept Art, Concept Art Colombia, Illustrator, Andrew Pro, Andrewpr0, 3D Work, Jaime Sanchez Ilustrador, Ilustrador Colombia" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet" />
 
-        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
-                    "@context": "https://schema.org",
-                    "@type": "WebPage",
-                    "name": "Concept Art | AndrewPro - Ilustrador en Colombia",
-                    "description": "Portafolio de Andrew Sánchez (AndrewPro), ilustrador colombiano especializado en Concept Art y arte digital.",
-                    "url": "https://andrewpr0.art",
-                    "author": {
-                        "@type": "Person",
-                        "name": "Andrew Sánchez",
-                        "url": "https://andrewpr0.art",
-                        "sameAs": [
-                            "https://www.artstation.com/andrewpro",
-                            "https://www.instagram.com/an.drew.pro",
-                            "https://twitter.com/andrewpr0"
-                        ]
-                    },
-                    mainEntity: {
-                      "@type": "CreativeWork",
-                      name: "Concept Art",
-                      url: "https://andrewpr0.art/#concept-art",
-                  },
-                  additionalEntity: [
-                      {
-                          "@type": "CreativeWork",
-                          name: "3D Work",
-                          url: "https://andrewpr0.art/#3d-work",
-                      },
-                  ],
-                    "keywords": [
-                        "concept art",
-                        "concept art colombia",
-                        "andrewpro",
-                        "andrewpr0",
-                        "jaime sanchez ilustrador",
-                        "ilustrador colombia"
-                    ],
-                    "image": "https://andrewpr0.art/images/portafolio.jpg"
-                }) }} />
+        <script
+                    type="application/ld+json"
+                    dangerouslySetInnerHTML={{
+                        __html: JSON.stringify({
+                            "@context": "https://schema.org",
+                            "@type": "Person",
+                            name: "Andrew Pro",
+                            description: "Illustrator and Concept Artist based in Colombia. Specializes in Concept Art and 3D Work.",
+                            url: "https://andrewpr0.art",
+                            sameAs: [
+                                "https://www.instagram.com/an.drew.pro",
+                                "https://www.artstation.com/andrewpro",
+                                "https://www.twitch.tv/andrewpr0",
+                            ],
+                            knowsAbout: ["Concept Art", "3D Work", "Illustration"],
+                        }),
+                    }}
+                />
 
       </head>
       <body>
