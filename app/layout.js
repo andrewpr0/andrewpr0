@@ -34,6 +34,18 @@ export default function Layout({ children, onCategoryChange }) {
                             "https://twitter.com/andrewpr0"
                         ]
                     },
+                    mainEntity: {
+                      "@type": "CreativeWork",
+                      name: "Concept Art",
+                      url: "https://andrewpr0.art/#concept-art",
+                  },
+                  additionalEntity: [
+                      {
+                          "@type": "CreativeWork",
+                          name: "3D Work",
+                          url: "https://andrewpr0.art/#3d-work",
+                      },
+                  ],
                     "keywords": [
                         "concept art",
                         "concept art colombia",
